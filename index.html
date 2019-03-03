@@ -14,7 +14,7 @@
             <script>
                 let i;
                 for (i = 1; i < 11; i++) {
-                    document.write(`<option value=${i}>${i}</option>`);
+                    document.getElementById('qty').innerHTML += `<option value=${i}>${i}</option>`;
                 }
             </script>
         </select>
@@ -23,12 +23,12 @@
                 let toppings = ["Cheese", "Sausage", "Pepperoni", "Supreme", "Meat Lovers"];
                 i = 0; 
                 while (i < toppings.length) {
-                    document.write(`<option value = ${toppings[i]}>${toppings[i]}</option>`);
+                    document.getElementById('top').innerHTML += `<option value='${toppings[i]}'>${toppings[i]}</option>`;
                     i++;
                 }
             </script>
         </select>
-        <button id="Order" value="Order">Button</button>
+        <input type="button" id="Order" value="Order"></input>
         <div id="summary"></div>
     </form>
 
