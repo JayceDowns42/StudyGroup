@@ -28,10 +28,10 @@
                 What Kind of Pizzas?<select name="top" id="top">
                     <script>
                         let toppings = ["Cheese", "Sausage", "Pepperoni", "Supreme", "Meat Lovers"];
-                        i = 0; 
-                        while (i < toppings.length) {
-                            document.getElementById('top').innerHTML += `<option value='${toppings[i]}'>${toppings[i]}</option>`;
-                            i++;
+                        
+                        for (i=0; i < toppings.length; i++) {
+                            document.getElementById('top').innerHTML += `<option value='${i}'>${toppings[i]}</option>`;
+                            
                         }
                     </script>
                 </select>
@@ -41,6 +41,7 @@
                 
             </form>
         </div>
+        <div id="pizzaPics"></div>
         <div id="summary"></div>
         <script src="javascript.js"></script>
     </body>

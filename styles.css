@@ -46,3 +46,12 @@ input, select {
     padding:10px;
     background-color: white;
 }
+
+.pizzaPictures {
+    height: 100px;
+}
+
+#pizzaPics {
+    padding: 5px;
+    margin: 10px;
+}
