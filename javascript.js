@@ -15,6 +15,7 @@ var sum = document.getElementById('summary');
 toppings = ["Cheese", "Sausage", "Pepperoni", "Supreme", "Meat Lovers"];
 
 function summary(){
+    sum.innerHTML = "";
     sum.innerHTML += `<h2>Order Summary:</h2>`;
     sum.innerHTML += `<h3>Name: ${nameVar.value}</h3>`;
     sum.innerHTML += `<h3>Phone: ${phone.value}</h3>`;
