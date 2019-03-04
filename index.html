@@ -5,33 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cheech's Pizza</title>
+    <link rel="stylesheet" href="styles.css">
+        
 </head>
 <body>
-    <form>
-        <input type="text" name="name" id="name">
-        <input type="text" name="phone" id="phone">
-        <select name="qty" id="qty">
-            <script>
-                let i;
-                for (i = 1; i < 11; i++) {
-                    document.getElementById('qty').innerHTML += `<option value=${i}>${i}</option>`;
-                }
-            </script>
-        </select>
-        <select name="top" id="top">
-            <script>
-                let toppings = ["Cheese", "Sausage", "Pepperoni", "Supreme", "Meat Lovers"];
-                i = 0; 
-                while (i < toppings.length) {
-                    document.getElementById('top').innerHTML += `<option value='${toppings[i]}'>${toppings[i]}</option>`;
-                    i++;
-                }
-            </script>
-        </select>
-        <input type="button" id="Order" value="Order"></input>
+    <div id="outContainer">
+        <img src="logo.png" id="logo" alt="Cheech's Pizza Logo" height=250>
+        <div id="form">
+            <h2>Place Your Order</h2>
+            <form>
+                Name:<input type="text" name="name" id="name" placeholder="Your Name">
+                Phone:<input type="text" name="phone" id="phone" placeholder="888-888-8888">
+                <br>
+                How Many Pizzas?<select name="qty" id="qty">
+                    <script>
+                        let i;
+                        for (i = 1; i < 11; i++) {
+                            document.getElementById('qty').innerHTML += `<option value=${i}>${i}</option>`;
+                        }
+                    </script>
+                </select>
+                What Kind of Pizzas?<select name="top" id="top">
+                    <script>
+                        let toppings = ["Cheese", "Sausage", "Pepperoni", "Supreme", "Meat Lovers"];
+                        i = 0; 
+                        while (i < toppings.length) {
+                            document.getElementById('top').innerHTML += `<option value='${toppings[i]}'>${toppings[i]}</option>`;
+                            i++;
+                        }
+                    </script>
+                </select>
+                <br>
+                <input type="button" id="Order" value="Submit Your Order"></input>
+                &rArr; Let the Baking Begin!
+                
+            </form>
+        </div>
         <div id="summary"></div>
-    </form>
-
-    <script src="javascript.js"></script>
+        <script src="javascript.js"></script>
+    </body>
 </body>
 </html>

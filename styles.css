@@ -1,0 +1,48 @@
+body{
+    text-align: center;
+    background-image: url("checker.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#logo {
+    padding-left: 80px;
+}
+
+#form {
+    width: 70%;
+    border: 5px solid red;
+    border-radius: 5px;
+    padding: 5px;
+    margin: auto;
+}
+
+#form h2 {
+    text-align: center;
+}
+input, select {
+    padding: 5px;
+    margin: 2px;
+}
+
+#Order {
+    position: relative;
+    right: 100;
+}
+
+#summary {
+    width: 80%;
+    border-radius: 5px;
+    padding: 5px;
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#outContainer {
+    width: 45%;
+    border: 10px solid black;
+    border-radius: 15px;
+    margin: auto;
+    padding:10px;
+    background-color: white;
+}
