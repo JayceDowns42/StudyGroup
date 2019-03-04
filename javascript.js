@@ -12,9 +12,12 @@ var total = 1.076;
 
 var sum = document.getElementById('summary');
 
+function summary_box(){
+    sum.style.border= `5px solid red`;
+    sum.innerHTML += `<h2>Order Summary:</h2>`;
+}
 
 function summary(){
-    sum.style.border= `5px solid red`;
     sum.innerHTML += `<h2>Order Summary:</h2>`;
     sum.innerHTML += `<h3>Name: ${nameVar.value}</h3>`;
     sum.innerHTML += `<h3>Phone: ${phone.value}</h3>`;
@@ -27,3 +30,8 @@ function summary(){
     sum.innerHTML += `<h2>One Step Closer to Pizza!</h2>`;
         
 }
+
+// function pizza_guy(){
+//     sum.innerHTML += `<img src="hooray.jpg" id="hooray">`;
+//     sum.innerHTML += `<h2>One Step Closer to Pizza!</h2>`;
+// }
